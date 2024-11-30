@@ -21,8 +21,8 @@ function App() {
         <TypewriterEffectSmooth words={words} />
         <div className=" w-80">
           {CardsData.map((data, idx) => (
-            <div id={idx} className="card">
-              {data.title}
+            <div id={idx} className="card flex justify-between">
+              <p>{data.title}</p>
               <a href={data.link} type="application/pdf" target="_blank">Link</a>
             </div>
           ))}
