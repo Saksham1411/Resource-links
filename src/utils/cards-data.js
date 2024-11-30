@@ -5,7 +5,7 @@ const CardsData = [
     },
     {
         title: "Computer Network",
-        link: "src/assets/Computer-Network.pdf"
+        link: "./assets/Computer-Network.pdf"
     }
 ]
 
