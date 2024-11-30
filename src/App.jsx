@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import { BackgroundBeamsWithCollision } from "./components/ui/background-effect2";
 import { TypewriterEffectSmooth } from "./components/ui/typewriter-effect";
 import CardsData from "./utils/cards-data";
@@ -16,19 +17,22 @@ function App() {
   console.log(CardsData);
 
   return (
-    <div className="">
+    <>
+      <Analytics />
       <BackgroundBeamsWithCollision>
         <TypewriterEffectSmooth words={words} />
         <div className=" w-80">
           {CardsData.map((data, idx) => (
             <div id={idx} className="card flex justify-between">
               <p>{data.title}</p>
-              <a href={data.link} type="application/pdf" target="_blank">Link</a>
+              <a href={data.link} type="application/pdf" target="_blank">
+                Link
+              </a>
             </div>
           ))}
         </div>
       </BackgroundBeamsWithCollision>
-    </div>
+    </>
   );
 }
 export default App;
