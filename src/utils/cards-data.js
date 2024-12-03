@@ -6,6 +6,10 @@ const CardsData = [
     {
         title: "Computer Network",
         link: "/assets/Computer-Networks.pdf"
+    },
+    {
+        title: "Operating System",
+        link: "/assets/Operating-Systems.pdf"
     }
 ]
 
